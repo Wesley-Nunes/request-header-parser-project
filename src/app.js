@@ -7,7 +7,10 @@ const port = process.env.PORT || 3000;
 
 app.use(cors({ optionsSuccessStatus: 200 }));
 
-app.get('/whoami', function(req, res) {
+app.get('/', (req, res) => {
+	res.json({ status: 'ok' });
+});
+app.get('/whoami', (req, res) => {
 	const address = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
 	const dividerAddres = address.lastIndexOf(':');
 	const ipaddress = address.substring(dividerAddres + 1);
