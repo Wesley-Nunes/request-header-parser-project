@@ -1,0 +1,21 @@
+{
+  "name": "request-header-parser-project",
+  "version": "0.1.0",
+  "description": "Request Header Parser Microservice",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch src/app.js",
+    "test": "node --watch src/tests/timestamp.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=20.0.0 <21"
+  },
+  "author": "@Wesley-Nunes",
+  "license": "MIT"
+}
